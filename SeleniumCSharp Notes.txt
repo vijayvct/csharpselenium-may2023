@@ -1,0 +1,177 @@
+Selenium 
+--------
+
+SDLC (Software Development LifeCycle)
+-------------------------------------
+Requirement Gathering 
+Analysis 
+Designing 
+Building 
+Testing 
+Deployment 
+Maintenance 
+
+Testing 
+-------
+It is process of finding bugs or errors in the software (desktop app/web application/mobile app)
+It can be manual or automated testing 
+
+Manual Testing 
+--------------
+In this approach a tester manually test the application or software 
+It is time consuming and error prone, repetitive 
+
+Automated Testing 
+-----------------
+In the approach we make use of automation tools to perform testing 
+Using this approach same test cases can be executed multiple time without any human interventation 
+They help you create reports to understand that test have passed or failed
+
+Selenium 
+QTP 
+CyPress - JavaScript
+TestComplete
+SoapUI - Groovy 
+Appium 
+Katalon Studio 
+
+Cost - Licensed Product 
+
+Learning Curve 
+
+Selenium 
+--------
+Selenium is an automation tool or framework to automate the testing of web application 
+It is open-source, free to use and cross-platform
+Selenium has multiple language binding or support multiple programming language (Java, C#, Ruby, Python, Javascript, Kotlin)
+
+Flavours of Selenium 
+--------------------
+Selenium IDE(Integrated Development Enviornment)
+------------------------------------------------
+-It is plugin for FireFox, Chrome and Edge 
+-It allows to record and play the activities or interaction with the browser
+
+Selenium WebDriver
+------------------
+-It provide a set of apis or libraries to automated web application testing
+-We can use multiple programming language with Selenium WebDriver
+
+Selenium Grid
+-------------
+-It Provides a hub-node architecture 
+-It is used to run test parallely on different system
+
+Selenium RC(Remote Control) (Deprecated)
+----------------------------------------
+-It provides client-server architecture
+
+Selenium 2 
+Selenium 3
+Selenium 4 - Latest Version 
+
+Tools 
+-----
+Visual Studio 
+
+Visual Studio Code + C# Extension 
+.NET 6 SDK 
+
+Automate the Google Search 
+--------------------------
+1)Launch the Google Chrome Browser 
+2)Navigate to Google.com 
+3)Locate the Search Textbox 
+4)Enter search text 
+5)Perform Search 
+6)Close the browser
+
+dotnet tool - It is unified tool for creating , building, running, deploying and testing .Net Application 
+
+To create a simple C# Console application 
+-----------------------------------------------
+dotnet new console -f net6.0 --use-program-main 
+
+Add Selenium Libraries to the Project 
+-------------------------------------
+Nuget Package Manager - (http://nuget.org)
+
+Visual Studio - Nuget Package Manager User Interface
+
+Visual Studio Code - dotnet add package 
+
+Selenium.WebDriver 
+Selenium.Support 
+
+dotnet add package Selenium.WebDriver
+
+dotnet add package Selenium.Support
+
+To open a new terminal - CTRL + SHIFT + `
+
+To Hide and Show - CTRL + `
+
+OpenQA.Selenium
+---------------
+IWebDriver :- Helps to interact with the web browser 
+
+IWebElement :- Helps to interact with the elements on the web pages 
+
+OpenQA.Selenium.Chrome 
+-----------------------
+ChromeDriver :- It will be to create an instamce of ChromeDriver and communictae with the real browser installed on your system
+
+dotnet build - to compile the project 
+
+dotnet run - to run the project 
+
+Locators 
+--------
+Locators helps to locate the elements on a web page 
+
+Elements :- HTML Form Elements, Other HTML Element(div,span,p,h1....)
+
+FindElement() - Locates a Single Element 
+FindElements() - Locates Multiple Elements
+
+By Class :- Provides different mechanism to find elements with in a HTML document
+
+Methods:-
+--------
+Name()
+Id()
+ClassName()
+LinkText()
+PartialLinkText()
+TagName()
+CssSelector()
+XPath()
+
+3A's of Testing 
+
+Arrange - In this phase , we create and set up a system under test, A SUT could be a method , a single object or a graph connected to other objects 
+ 
+Act - In this phase, we invoked the functionality and gather result 
+
+Assert - In this phase, we verify the result and decide whether the test is passed or failed
+
+https://demoselsite.azurewebsites.net/Default.aspx
+https://demoselsite.azurewebsites.net/WebForm1.aspx
+https://demoselsite.azurewebsites.net/WebForm2.aspx
+https://demoselsite.azurewebsites.net/WebForm3.aspx
+https://demoselsite.azurewebsites.net/WebForm4.aspx
+
+2nd Demo
+--------
+1)Launch browser (Chrome/FireFox/Edge)
+2)Navigate to https://demoselsite.azurewebsites.net/Default.aspx
+3)Locate 3 Elements
+	Textbox
+	Button
+	Label(Span)
+4)Enter some text in textbox
+5)Click on button 
+6)Verify the result 
+	Welcome Message - Test Passed
+	Otherwise - Test Failed
+7)Close the browser
