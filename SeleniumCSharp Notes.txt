@@ -131,8 +131,8 @@ Locators helps to locate the elements on a web page
 
 Elements :- HTML Form Elements, Other HTML Element(div,span,p,h1....)
 
-FindElement() - Locates a Single Element 
-FindElements() - Locates Multiple Elements
+driver.FindElement() - Locates a Single Element 
+driver.FindElements() - Locates Multiple Elements
 
 By Class :- Provides different mechanism to find elements with in a HTML document
 
@@ -175,3 +175,79 @@ https://demoselsite.azurewebsites.net/WebForm4.aspx
 	Welcome Message - Test Passed
 	Otherwise - Test Failed
 7)Close the browser
+
+Css Selectors
+-------------
+
+Type of Css Selector 
+--------------------
+Id -> #
+Class -> .
+
+By.CssSelector("input#txtno1"); -- locate the text with the mentioned id 
+
+<p class="myclass">This is First Para</p>
+
+<p class="myclass">This is Second Para</p>
+
+<p>This is Third Para</p>
+
+<p class="myclass">This is Fourth Para</p>
+
+
+//Locate all the paragraph where class attribute has myclass as the //value
+List<IWebElement> elements=driver.FindElements(By.CssSelector("p.myclass"));
+
+List<IWebElement> elements = driver.FindElements(By.TagName("p")); - Locate all the paragraph the web page
+
+XPath 
+-----
+XPath stands for XML Path Language 
+It uses a non-xml syntax to provide a flexible way of addressing or pointing to different part of XML or HTML document 
+
+<html>
+	<body>
+		<h1>XPath Demo</h1>
+		<h1>Selenium</h1>
+		
+		<form>
+		
+		<input name="name" type="text">
+		<input name="email" type="email">
+		<input name="city" type="text">
+		
+		<textarea></textarea>
+		
+		<input type="button" value="Click Me">
+		
+		</form>
+		
+		<div>
+			<span>Hello</span>
+		</div>
+	</body>
+</html>
+
+Absolute XPath
+--------------
+/html/body/h1[1]
+/html/body/h1[2]
+/html/body/form/input[3]
+/html/body/div[1]/span[1]
+
+Relative XPath
+--------------
+//h1[1]
+//form/input[3]
+//input[@name='city']
+//input[@type='button']
+
+Developer Tools (F12)
+---------------------
+/html/body/form/div[3]/table/tbody/tr[1]/td[2]/input - Absolute XPath
+
+//*[@id="txtno1"] - Relative XPath 
+
+Chropath or XPath
+-----------------
+Extension to Chrome and Firefox Browser 
