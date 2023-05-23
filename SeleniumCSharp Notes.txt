@@ -251,3 +251,41 @@ Developer Tools (F12)
 Chropath or XPath
 -----------------
 Extension to Chrome and Firefox Browser 
+
+Synchronization (Waits)
+-----------------------
+It helps scripts to match the speed to the web pages to locate element and perform action on them 
+
+	Thread.Sleep()
+	Implicit Wait
+		Using this we can instruct the script to wait for specified evertime it tries to locate an element 
+		
+		driver.Manage().TimeOuts().ImplicitWait = TimeSpan.FromSeconds(13);
+		
+	Explicit Wait
+		WebDriverWait Class
+		
+		Until() - to verify a condition
+		
+		ExpectedConditions - Supported till Selenium 3.10
+		
+		DotnetSeleniumExtra
+		
+		dotnet add package DotNetSeleniumExtras.WaitHelpers --version 3.11.0
+		
+		=> :- Lambda Operator 
+		
+		(input) => expression or statememt
+		
+		Fluent Wait 
+		-----------
+		The Fluent wait is similar to Explicit wait in many ways.
+		It allows you to control the WebDriver to set the specified time for some condition to appear before it could throw "ElemenetNotVisibleException"
+		
+		The main advantage of implmenting the Fluent Wait is setting the polling frequency
+		Polling frequency is the frequency at which the driver checks for the element whether it has loaded or not 
+	
+Actions 
+-------
+Actions class provides support for handling keyboards and mouse event
+It can also perform drag and drop, clicking on multiple element with control key etc....

@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "tRR9TgynKr1OrELAjsNL0gBU3z3ivO1wnF/Dr3EploFoBPikhP2ErVOeEge6TeaxwKBh4eWh7RkZH/CaGbPZog==",
+  "dgSpecHash": "g68kIHk1vO60PmXNniFQFjQtt9LNOWwTM65ZoyKYIUuSuNTc3b6cVSFE5A1e/mBq7lgj5vitAB1Qj7u7MKRt3A==",
   "success": true,
   "projectFilePath": "C:\\Demos\\SeleniumDemos-May2023\\FirstSeleniumDemo\\FirstSeleniumDemo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\VijayV\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\VijayV\\.nuget\\packages\\selenium.support\\4.9.1\\selenium.support.4.9.1.nupkg.sha512",
-    "C:\\Users\\VijayV\\.nuget\\packages\\selenium.webdriver\\4.9.1\\selenium.webdriver.4.9.1.nupkg.sha512"
+    "C:\\Users\\VijayV\\.nuget\\packages\\selenium.webdriver\\4.9.1\\selenium.webdriver.4.9.1.nupkg.sha512",
+    "C:\\Users\\VijayV\\.nuget\\packages\\seleniumextras.waithelpers\\1.0.2\\seleniumextras.waithelpers.1.0.2.nupkg.sha512"
   ],
   "logs": []
 }

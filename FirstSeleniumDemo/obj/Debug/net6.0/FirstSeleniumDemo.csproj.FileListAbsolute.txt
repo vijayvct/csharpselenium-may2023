@@ -20,3 +20,4 @@ C:\Demos\SeleniumDemos-May2023\FirstSeleniumDemo\obj\Debug\net6.0\refint\FirstSe
 C:\Demos\SeleniumDemos-May2023\FirstSeleniumDemo\obj\Debug\net6.0\FirstSeleniumDemo.pdb
 C:\Demos\SeleniumDemos-May2023\FirstSeleniumDemo\obj\Debug\net6.0\FirstSeleniumDemo.genruntimeconfig.cache
 C:\Demos\SeleniumDemos-May2023\FirstSeleniumDemo\obj\Debug\net6.0\ref\FirstSeleniumDemo.dll
+C:\Demos\SeleniumDemos-May2023\FirstSeleniumDemo\bin\Debug\net6.0\SeleniumExtras.WaitHelpers.dll

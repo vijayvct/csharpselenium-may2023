@@ -8,9 +8,10 @@ class Program03
 {
     static void Main(string[] args)
     {
-        RadioButtonTest("Java");
-        RadioButtonTest("Python");
-        RadioButtonTest("Scala");
+        // RadioButtonTest("Java");
+        // RadioButtonTest("Python");
+        // RadioButtonTest("Scala");
+        CheckBoxTest();
     }
 
     static void RadioButtonTest(string language)
@@ -35,6 +36,31 @@ class Program03
         var result = driver.FindElement(By.Id("lblText")).Text;
 
         if(result.Contains(language))
+        {
+            Console.WriteLine("Test Passed");
+        }
+        else
+        {
+            Console.WriteLine("Test Failed");
+        }
+
+        driver.Close();
+    }
+
+    static void CheckBoxTest()
+    {
+        IWebDriver driver = new ChromeDriver();
+        driver.Manage().Window.Maximize();
+        driver.Url="https://demoselsite.azurewebsites.net/WebForm4.aspx";
+
+        //Locating the checkbox
+        IWebElement checkbox = driver.FindElement(By.XPath("//input[@id='CheckBox1']"));
+
+        checkbox.Click();
+
+        IWebElement result = driver.FindElement(By.CssSelector("span#Label1"));
+
+        if(result!=null)
         {
             Console.WriteLine("Test Passed");
         }
