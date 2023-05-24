@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="8c3a8fb3-2b5d-458e-9444-5069a5caa0f3" name="VijayV@CTAADPG02MWBG 2023-05-24 12:45:57" runUser="MUMBAI1\VijayV" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2023-05-24T12:45:57.6995366+05:30" queuing="2023-05-24T12:45:57.6995372+05:30" start="2023-05-24T12:45:47.7826999+05:30" finish="2023-05-24T12:46:33.0169028+05:30" />
+  <TestSettings name="default" id="30ffe49b-5086-422e-8fc1-227fc66039fe">
+    <Deployment runDeploymentRoot="VijayV_CTAADPG02MWBG_2023-05-24_12_45_57" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="7893e107-068a-4a89-aef6-5f45ee703fae" testId="62620de7-9267-8025-aaf1-a983f872e861" testName="AddTest" computerName="CTAADPG02MWBG" duration="00:00:08.5712650" startTime="2023-05-24T12:45:49.0904562+05:30" endTime="2023-05-24T12:45:57.6614890+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7893e107-068a-4a89-aef6-5f45ee703fae" />
+    <UnitTestResult executionId="acba0a72-6f9f-48b3-af9c-31b0b008cc24" testId="695f3ee7-552e-7cda-59e9-ca918a8dcab4" testName="DivideTest" computerName="CTAADPG02MWBG" duration="00:00:07.7977400" startTime="2023-05-24T12:45:57.6628907+05:30" endTime="2023-05-24T12:46:05.4604927+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="acba0a72-6f9f-48b3-af9c-31b0b008cc24">
+      <Output>
+        <ErrorInfo>
+          <Message>  Expected string length 1 but was 2. Strings differ at index 0.&#xD;
+  Expected: "5"&#xD;
+  But was:  "-5"&#xD;
+  -----------^&#xD;
+</Message>
+          <StackTrace>   at NUnitSeleniumDemo.CalculatorTests.DivideTest() in C:\Demos\SeleniumDemos-May2023\NUnitSeleniumDemo\CalculaterTests.cs:line 58&#xD;
+
+1)    at NUnitSeleniumDemo.CalculatorTests.DivideTest() in C:\Demos\SeleniumDemos-May2023\NUnitSeleniumDemo\CalculaterTests.cs:line 58&#xD;
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7538b7d6-82e6-455d-bc8b-ccde0a1f8e55" testId="7e2e3a4a-6ba8-12d4-f8fc-99f729abdff3" testName="MessageTest" computerName="CTAADPG02MWBG" duration="00:00:07.8904030" startTime="2023-05-24T12:46:24.9033617+05:30" endTime="2023-05-24T12:46:32.7936250+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7538b7d6-82e6-455d-bc8b-ccde0a1f8e55" />
+    <UnitTestResult executionId="f3fe06c8-b121-45d8-8205-643acb8e0eb9" testId="156f7fd5-7564-a29d-3533-7292e22e43c1" testName="GoogleSearchTest" computerName="CTAADPG02MWBG" duration="00:00:10.6790530" startTime="2023-05-24T12:46:14.2244604+05:30" endTime="2023-05-24T12:46:24.9033252+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f3fe06c8-b121-45d8-8205-643acb8e0eb9" />
+    <UnitTestResult executionId="344fc673-f9db-4856-8e5e-28f047fd3c45" testId="bc41e4a0-dc7f-e34f-7b7f-e909881f05c8" testName="MultiplyTest" computerName="CTAADPG02MWBG" duration="00:00:08.7528970" startTime="2023-05-24T12:46:05.4606676+05:30" endTime="2023-05-24T12:46:14.2134102+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="344fc673-f9db-4856-8e5e-28f047fd3c45" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="MessageTest" storage="c:\demos\seleniumdemos-may2023\nunitseleniumdemo\bin\debug\net6.0\nunitseleniumdemo.dll" id="7e2e3a4a-6ba8-12d4-f8fc-99f729abdff3">
+      <Execution id="7538b7d6-82e6-455d-bc8b-ccde0a1f8e55" />
+      <TestMethod codeBase="C:\Demos\SeleniumDemos-May2023\NUnitSeleniumDemo\bin\Debug\net6.0\NUnitSeleniumDemo.dll" adapterTypeName="executor://nunit3testexecutor/" className="NUnitSeleniumDemo.Tests" name="MessageTest" />
+    </UnitTest>
+    <UnitTest name="DivideTest" storage="c:\demos\seleniumdemos-may2023\nunitseleniumdemo\bin\debug\net6.0\nunitseleniumdemo.dll" id="695f3ee7-552e-7cda-59e9-ca918a8dcab4">
+      <Execution id="acba0a72-6f9f-48b3-af9c-31b0b008cc24" />
+      <TestMethod codeBase="C:\Demos\SeleniumDemos-May2023\NUnitSeleniumDemo\bin\Debug\net6.0\NUnitSeleniumDemo.dll" adapterTypeName="executor://nunit3testexecutor/" className="NUnitSeleniumDemo.CalculatorTests" name="DivideTest" />
+    </UnitTest>
+    <UnitTest name="MultiplyTest" storage="c:\demos\seleniumdemos-may2023\nunitseleniumdemo\bin\debug\net6.0\nunitseleniumdemo.dll" id="bc41e4a0-dc7f-e34f-7b7f-e909881f05c8">
+      <Execution id="344fc673-f9db-4856-8e5e-28f047fd3c45" />
+      <TestMethod codeBase="C:\Demos\SeleniumDemos-May2023\NUnitSeleniumDemo\bin\Debug\net6.0\NUnitSeleniumDemo.dll" adapterTypeName="executor://nunit3testexecutor/" className="NUnitSeleniumDemo.CalculatorTests" name="MultiplyTest" />
+    </UnitTest>
+    <UnitTest name="AddTest" storage="c:\demos\seleniumdemos-may2023\nunitseleniumdemo\bin\debug\net6.0\nunitseleniumdemo.dll" id="62620de7-9267-8025-aaf1-a983f872e861">
+      <Execution id="7893e107-068a-4a89-aef6-5f45ee703fae" />
+      <TestMethod codeBase="C:\Demos\SeleniumDemos-May2023\NUnitSeleniumDemo\bin\Debug\net6.0\NUnitSeleniumDemo.dll" adapterTypeName="executor://nunit3testexecutor/" className="NUnitSeleniumDemo.CalculatorTests" name="AddTest" />
+    </UnitTest>
+    <UnitTest name="GoogleSearchTest" storage="c:\demos\seleniumdemos-may2023\nunitseleniumdemo\bin\debug\net6.0\nunitseleniumdemo.dll" id="156f7fd5-7564-a29d-3533-7292e22e43c1">
+      <Execution id="f3fe06c8-b121-45d8-8205-643acb8e0eb9" />
+      <TestMethod codeBase="C:\Demos\SeleniumDemos-May2023\NUnitSeleniumDemo\bin\Debug\net6.0\NUnitSeleniumDemo.dll" adapterTypeName="executor://nunit3testexecutor/" className="NUnitSeleniumDemo.Tests" name="GoogleSearchTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="62620de7-9267-8025-aaf1-a983f872e861" executionId="7893e107-068a-4a89-aef6-5f45ee703fae" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="695f3ee7-552e-7cda-59e9-ca918a8dcab4" executionId="acba0a72-6f9f-48b3-af9c-31b0b008cc24" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7e2e3a4a-6ba8-12d4-f8fc-99f729abdff3" executionId="7538b7d6-82e6-455d-bc8b-ccde0a1f8e55" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="156f7fd5-7564-a29d-3533-7292e22e43c1" executionId="f3fe06c8-b121-45d8-8205-643acb8e0eb9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bc41e4a0-dc7f-e34f-7b7f-e909881f05c8" executionId="344fc673-f9db-4856-8e5e-28f047fd3c45" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="5" executed="5" passed="4" failed="1" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 4.4.0.0: Test execution started&#xD;
+Running all tests in C:\Demos\SeleniumDemos-May2023\NUnitSeleniumDemo\bin\Debug\net6.0\NUnitSeleniumDemo.dll&#xD;
+   NUnit3TestExecutor discovered 5 of 5 NUnit test cases using Current Discovery mode, Non-Explicit run&#xD;
+NUnit Adapter 4.4.0.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

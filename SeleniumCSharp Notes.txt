@@ -289,3 +289,74 @@ Actions
 -------
 Actions class provides support for handling keyboards and mouse event
 It can also perform drag and drop, clicking on multiple element with control key etc....
+
+Unit Testing 
+------------
+Unit Testing is a testing methodlogy which allows us to test a small unit or function of the application 
+It can be done manually or we can also automated it 
+
+.NET 
+-----
+NUnit
+XUnit
+MSTest
+
+NUint
+-----
+NUnit is a unit testing framework for .NET 
+It is written in C#
+It provide API to create and manage test cases, it also provide options to create reports 
+It supported on .NET Framework, .NET Core or .NET 
+NUnit provides Attributes and Assertion to create, manage and execute test cases 
+
+www.nunit.org
+
+Attributes 
+----------
+TestFixture - It is used to mark a class which contains test method (Optional)
+Test - It is used to mark a method as test case method 
+SetUp - A method marked with this attribute will be invoked before every test method is executed 
+TearDown - A method marked with this attrbutes will be invoked after every test method is executed
+OneTimeSetUp - A method marked with this attribute will be invoked before any of the test methods is executed
+OneTimeTearDown - A method marked with this attribute will be invoked after all the test method are executed
+
+TestCase - It has dual purpose. It will mark a method as a parameterized test method and also provide the input for the parameterized test method
+
+TestCaseSource - It will mark a method as a parameterized test method and also provide the source of input parameters
+
+Assertion 
+---------
+Assertion help us to verify that the test cases are passed or failed
+
+Assert.AreEqual()
+Assert.True()
+Assert.False()
+Assert.IsNull()
+.......
+
+Tools and Library
+-----------------
+Visual Studio or Visual Studio Code 
+NUnit Library 
+Test Runner 
+	NUnit Console (.NET Framework)
+	Test Explorer (Included in Visual Studio)
+	dotnet test - cli tool 
+	
+	.NET Core or .NET - NUnit Test Project Template
+	
+	dotnet new nunit 
+	
+dotnet test :- execute all the test methods in the project or solution 
+
+dotnet test --help :- gets the information about the dotnet test command
+
+dotnet test --list-tests or -t :- list all the test methods in the project or solution 
+
+dotnet test --filter "fullyqualifiedname" :- allows to execute the test based on fully qualified name
+
+dotnet test --fliter TestProject.MyTestClass
+
+dotnet test --filter TestProject.MyTestClass.Test1
+
+dotnet test --logger trx :- helps to log the test execution in a filr and helps create reports 
