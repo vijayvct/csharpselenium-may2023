@@ -315,6 +315,7 @@ Attributes
 ----------
 TestFixture - It is used to mark a class which contains test method (Optional)
 Test - It is used to mark a method as test case method 
+
 SetUp - A method marked with this attribute will be invoked before every test method is executed 
 TearDown - A method marked with this attrbutes will be invoked after every test method is executed
 OneTimeSetUp - A method marked with this attribute will be invoked before any of the test methods is executed
@@ -359,4 +360,20 @@ dotnet test --fliter TestProject.MyTestClass
 
 dotnet test --filter TestProject.MyTestClass.Test1
 
-dotnet test --logger trx :- helps to log the test execution in a filr and helps create reports 
+dotnet test --logger trx :- helps to log the test execution in a file and helps create reports 
+
+Data Driven Testing 
+-------------------
+In data driven testing , the test data resides in the external source like text file, csv files or excel document 
+
+dotnet add package EPPlus --version 6.2.4
+
+Category Attribute :- Helps to cateogrized the test method 
+
+	dotnet test --filter TestCategory=nameofcategory
+	
+	dotnet test --filter TestCategory=InternalDataTest
+	
+	To read or interact with configuration file we need to add the following package to the project 
+	
+	dotnet add package Microsoft.Extensions.Configuration --version 6.0.1
