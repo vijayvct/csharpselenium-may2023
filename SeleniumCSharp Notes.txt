@@ -377,3 +377,56 @@ Category Attribute :- Helps to cateogrized the test method
 	To read or interact with configuration file we need to add the following package to the project 
 	
 	dotnet add package Microsoft.Extensions.Configuration --version 6.0.1
+	
+Extent Reports
+--------------
+It is tool to create test reports in different format
+It is available in 2 flavours 
+	-Community Edition - Free to use and only generates HTML reports
+	-Commerial Edition - License 
+					   - Support for multiple report formats 
+					   
+	dotnet add package ExtentReports --version 4.1.0
+	
+	test.Log("type of message","message")
+		Status - Enumeration
+			Status.Info
+			Status.Pass.....
+			
+	test.Info()
+	test.Pass().
+	.....
+	
+	ITakeScreeShot :- Interface to take screenshot of the UI
+	
+Page Object Model(POM)
+----------------------
+POM is a design pattern in selenium that creates an object repository for storing all the webelement 
+It is useful in reducing code duplication and improves test case maintanence 
+In POM, each web page of an application is considered a class file
+Each class file wil contain only corresponding web page element and functionality of that page 
+Using these element testers can perform operations on the website under test
+
+Advantages of POM
+-----------------
+Reusability of Code 
+Easy Maintenance
+Clean and Easy to understand code 
+Better Test Script 
+
+PageFactory 
+-----------
+It is an extension to page objects that are used to initialize the web elements that are defined on a page object 
+You can locate the web elements by using the annotation or attributes 
+
+Attributes - FindsBy
+
+Method - InitElement()
+
+It is supported till Selenium 3.10 or We can make use of Community driven package DotnetSeleniumExtras.PageObjects
+
+2 Demos
+------
+1- Without PageFactory
+
+2- With PageFactory 

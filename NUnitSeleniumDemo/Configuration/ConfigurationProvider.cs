@@ -14,7 +14,7 @@ public class ConfigurationProvider
             {
                 configuration= new ConfigurationManager();
 
-                configuration.AddJsonFile("../appsettings.local.json",optional:true,false);
+                configuration.AddJsonFile(@"C:\Demos\SeleniumDemos-May2023\NUnitSeleniumDemo\appsettings.local.json",optional:true,false);
             }
 
             return configuration;
