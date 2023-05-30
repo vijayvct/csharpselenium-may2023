@@ -430,3 +430,5 @@ It is supported till Selenium 3.10 or We can make use of Community driven packag
 1- Without PageFactory
 
 2- With PageFactory 
+
+dotnet add package DotNetSeleniumExtras.PageObjects.Core --version 4.3.0
